@@ -20,5 +20,15 @@ class SecondActivity : AppCompatActivity() {
         val receivedNumber = intent.getIntExtra("NUMBER", 0)
         txtReceivedNumber.text = "Received Number: $receivedNumber"
 
+        btnMultiplyAndReturn.setOnClickListener {
+            val result = receivedNumber * 2
+            val returnIntent = Intent()
+            returnIntent.putExtra("RESULT", result)
+
+            // Set the result using setResult with the Intent
+            setResult(RESULT_OK, returnIntent)
+            finish()
+        }
     }
+
 }
