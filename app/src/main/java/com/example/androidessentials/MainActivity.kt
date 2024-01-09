@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             if (result.resultCode == RESULT_OK) {
                 val data: Intent? = result.data
                 val resultValue = data?.getIntExtra("RESULT", 0)
-                txtResult.text = "Result: $resultValue"
+                txtResult.text = "Result after multiplying 2: $resultValue"
             }
         }
     override fun onCreate(savedInstanceState: Bundle?) {
