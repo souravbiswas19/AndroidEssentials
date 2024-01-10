@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextNumber"
         android:layout_marginTop="16dp"
-        android:text="Send Number"/>
+        android:text="Send Number"
+        android:background="#FFA500"/>
 
     <TextView
         android:id="@+id/txtResult"
