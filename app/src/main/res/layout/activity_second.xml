@@ -21,6 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txtReceivedNumber"
         android:layout_marginTop="16dp"
-        android:text="Multiply and Return"/>
+        android:text="Back Button"/>
 
 </RelativeLayout>
