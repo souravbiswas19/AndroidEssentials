@@ -1,5 +1,6 @@
 package com.example.androidessentials
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,7 @@ class SecondActivity : AppCompatActivity() {
     private lateinit var txtReceivedNumber: TextView
     private lateinit var btnMultiplyAndReturn: Button
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
@@ -18,7 +20,7 @@ class SecondActivity : AppCompatActivity() {
         btnMultiplyAndReturn = findViewById(R.id.btnMultiplyAndReturn)
 
         val receivedNumber = intent.getIntExtra("NUMBER", 0)
-        txtReceivedNumber.text = "Received Number: $receivedNumber"
+        txtReceivedNumber.text = "Received Number is : $receivedNumber"
 
         btnMultiplyAndReturn.setOnClickListener {
             val result = receivedNumber * 2

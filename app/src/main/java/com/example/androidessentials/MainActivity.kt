@@ -16,12 +16,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var editTextNumber: EditText
     private lateinit var btnSendNumber: Button
     private lateinit var txtResult: TextView
+    @SuppressLint("SetTextI18n")
     private val startForResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK) {
                 val data: Intent? = result.data
                 val resultValue = data?.getIntExtra("RESULT", 0)
-                txtResult.text = "Result after multiplying 2: $resultValue"
+                txtResult.text = "Result after multiplying 2 : $resultValue"
             }
         }
     override fun onCreate(savedInstanceState: Bundle?) {
