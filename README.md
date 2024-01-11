@@ -1,5 +1,8 @@
 Android Essential Assignment Repository
 
+Apk is present in the repository as app-debug.apk
+Link for apk download is - 
+
 Demonstration of the App
 
 
